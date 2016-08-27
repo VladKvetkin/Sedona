@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+	<div class="main-container">
+		<header>
+			<nav class="main-navigation">
+				<ul class="clearfix">
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><div class="city-logo"></div></li>
+					<li><a href="#">Гостиницы</a></li>
+					<li><a href="#">Карта штата</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main-content">
+			<div class="main-title">
+				<h2>Седона — небольшой городок в аризоне,<br> заслуживающий большего!</h2>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</div>
+			<section class="first-cause clearfix">
+				<div class="cause-title">
+					<h3>Настоящий<br> городок</h3>
+					<span>— №1 —</span>
+					<p>Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
+				</div>
+				<img src="img/first-cause.png" alt="Sedona photo" width="800" height="256">
+			</section>
+			<section class="services clearfix">
+				<div class="housing">
+					<h3>Жилье</h3>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="food">
+					<h3>Еда</h3>
+					<p>Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!</p>
+				</div>
+				<div class="souvenirs">
+					<h3>Сувениры</h3>
+					<p>Не только китайского,<br> но и местного производства!</p>
+				</div>
+			</section>
+			<section class="second-cause clearfix">
+				<div class="cause-title">
+					<h3>Там есть<br> мост дьявола</h3>
+					<span>— №2 —</span>
+					<p>Да, по нему можно пройти!<br> Если конечно вы осмелитесь</p>
+				</div>
+				<img src="img/second-cause.png" alt="Sedona photo" width="800" height="256">
+			</section>
+			<section class="last-causes clearfix">
+				<div class="fourth-cause">
+					<h3>Небольшая<br> площадь</h3>
+					<span>— №3 —</span>
+					<p>Все достопримечательности находятся очень близко</p>
+				</div>
+				<div class="fifth-cause">
+					<h3>Красивая<br> дорога</h3>
+					<span>— №4 —</span>
+					<p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+				</div>
+				<div class="sixth-cause">
+					<h3>Мало<br> туристов</h3>
+					<span>— №5 —</span>
+					<p>Большинство едет в гранд каньон и толпится там</p>
+				</div>
+			</section>
+			<section class="find-hotel">
+				<h2>Заинтересовались?</h2>
+				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<button class="btn" type="button" title="Поиск гостиницы">Поиск гостиницы в седоне</button>
+			</section>
+			<div class="map-wrap">
+				<div class="map" id="googleMap"></div>
+					<footer class="main-footer clearfix">
+						<section class="promo-block">
+							<span>#visitsedona</span>
+						</section>
+						<section class="social">
+							<a class="social-btn social-btn-tw" href="#"></a>
+							<a class="social-btn social-btn-fb" href="#"></a>
+							<a class="social-btn social-btn-you" href="#"></a>	
+						</section>
+						<section class="copyrights">
+							<span>website by</span>
+							<a class="logo" href="#"></a>
+						</section>
+					</footer>
+			</div>
+		</main>
+	</div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxss__mWdjtvtyhP6IRubpZklXCcOryVs"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
