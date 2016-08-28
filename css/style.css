@@ -29,6 +29,13 @@ body {
 					 1200px 773px;
 }
 
+.main-container.inner-page header {
+	min-height: 280px;
+	background: none;
+	background: url("../img/hotels-header.png") no-repeat center top;
+	background-size: cover;
+}
+
 .main-navigation {
 	max-height: 56px;
 	background-color: #ffffff;
@@ -76,6 +83,107 @@ body {
 	width: 138px;
 	height: 70px;
 	background: url("../img/city-logo.png") no-repeat top center;
+}
+
+.inner-page .hotels-filter {
+	display: flex;
+	margin: 0;
+	padding-left: 72px;
+}
+
+.hotels-filter .infrastructure,
+.hotels-filter .property-type {
+	display: flex;
+	width: 240px;	
+	padding: 0;
+	margin: 0;
+
+	text-transform: uppercase;
+	
+	color: #ffffff;
+	border: none;
+}
+
+.hotels-filter .property-type {
+	margin-right: 240px;
+}
+
+.infrastructure legend,
+.property-type legend {
+	padding: 0;
+	padding-top: 25px;
+	margin: 0;
+	margin-bottom: 25px;
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.3;
+
+	border: none;
+}
+
+.infrastructure label,
+.property-type label {
+	position: relative;
+	margin-bottom: 23px;
+	padding-left: 40px;
+
+	color: #c1c1c1;
+
+	transition: all 0.5s ease;
+}
+
+.infrastructure label:last-of-type,
+.property-type label:last-of-type {
+	margin-bottom: 0;
+}
+
+.infrastructure input[type="checkbox"],
+.property-type input[type="checkbox"] {
+	display: none;
+}
+
+.infrastructure label::before,
+.property-type label::before {
+	content: "\2610";
+	position: absolute;
+	left: 0;
+
+	width: 21px;
+	height: 21px;
+
+	font-family: "symbols-sedona", sans-serif;
+	font-size: 26px;
+	line-height: 20px;
+	color: #c1c1c1;
+
+	transition: all 0.5s ease;
+}
+
+.infrastructure input[type="checkbox"]:checked + label::before,
+.property-type input[type="checkbox"]:checked + label::before {
+	content: "\2611";
+	color: #ffffff;
+}
+
+.infrastructure input[type="checkbox"]:checked + label,
+.property-type input[type="checkbox"]:checked + label {
+	color: #ffffff;
+}
+
+.infrastructure input[type="checkbox"] + label:hover::before,
+.property-type input[type="checkbox"] + label:hover::before{
+	color: #ffffff;
+}
+
+.infrastructure input[type="checkbox"] + label:hover,
+.property-type input[type="checkbox"] + label:hover {
+	color: #ffffff;
+}
+
+.cost-per-day {
+	width: 336px;
+	padding-right: 72px;
 }
 
 .main-title {
@@ -332,6 +440,12 @@ body {
 	width: 100%;
 
 	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer.inner-page {
+	position: static;
+
+	border-top: 1px solid #e5e5e5;
 }
 
 .main-footer .promo-block {
