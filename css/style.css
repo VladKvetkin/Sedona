@@ -1,14 +1,22 @@
 body {
 	min-width: 800px;
 	margin: 0;
-
+	
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 21px;
+	line-height: 1.5;
 	
 	color: #333333;
 	background-color: #f2f2f2;
+}
+
+.main-container {
+	width: 1200px;
+	margin: 0 auto;
+
+	background-color: #ffffff;
+	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.20);
 }
 
 .main-container header {
@@ -21,21 +29,14 @@ body {
 					 1200px 773px;
 }
 
-.main-container {
-	width: 1200px;
-	margin: 0 auto;
-
+.main-navigation {
+	max-height: 56px;
 	background-color: #ffffff;
-	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.20);
-}
-
-.clearfix {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 .main-navigation ul {
+	display: flex;
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 
@@ -44,21 +45,16 @@ body {
 	list-style: none;
 }
 
-.main-navigation {
-	max-height: 56px;
-	background-color: #ffffff;
-}
-
 .main-navigation li {
-	display: inline-block;
 	padding-top: 16px;
-	padding-bottom: 18px;
 
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 1.86;
 	font-weight: 700;
-	vertical-align: top;
+}
 
+.main-navigation li:nth-of-type(3) {
+	padding-top: 0;
 }
 
 .main-navigation a {
@@ -76,45 +72,11 @@ body {
 	color: #b2b2b2;
 }
 
-.main-navigation li:first-of-type,
-.main-navigation li:nth-of-type(2) {
-	float: left;
-
-	text-align: left;
-}
-
-.main-navigation li:first-of-type {
-	padding-left: 72px;
-	margin-right: 147px;
-}
-
-.main-navigation li:nth-of-type(2) {
-	margin-right: 121px;
-}
-
-.main-navigation li:nth-of-type(3) {
-	padding: 0;
-	margin-right: 130px;
-}
-
-.main-navigation li:last-of-type {
-	margin-right: 162px;
-}
-
-.main-navigation li:nth-of-type(4),
-.main-navigation li:last-of-type {
-	float: right;
-
-	text-align: right;
-}
-
 .city-logo {
 	width: 138px;
 	height: 70px;
 	background: url("../img/city-logo.png") no-repeat top center;
 }
-
-
 
 .main-title {
 	margin-bottom: 55px;
@@ -128,7 +90,7 @@ body {
 
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 26px;
+	line-height: 1.24;
 	
 	color: #000000;
 }
@@ -138,6 +100,8 @@ body {
 }
 
 .first-cause {
+	display: flex;
+	
 	text-align: center;
 	text-transform: uppercase;
 
@@ -145,8 +109,7 @@ body {
 }
 
 .first-cause .cause-title {
-	float: left;
-	width: 400px;
+	width: 33%;
 	padding-top: 54px;
 	padding-bottom: 44px;
 
@@ -159,7 +122,7 @@ body {
 
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 27px;
+	line-height: 1.3;
 }
 
 .cause-title span {
@@ -172,10 +135,12 @@ body {
 }
 
 .first-cause img {
-	float: right;
+	width: 67%;
 }
 
 .services {
+	display: flex;
+	justify-content: space-around;
 	margin-bottom: 72px;
 
 	text-transform: uppercase;
@@ -185,34 +150,27 @@ body {
 }
 
 .services .housing {
-	float: left;
-	width: 255px;
-	padding-left: 72px;
+	width: 400px;
 	padding-top: 100px;
-	margin-right: 130px;
 	margin-top: 60px;
 
-	background: url("../img/housing.png") no-repeat 64% 0;
+	background: url("../img/housing.png") no-repeat top center;
 }
 
-.services .food {
-	float: left;
-	width: 343px;
+.services .food {	
+	width: 400px;
 	padding-top: 100px;
-	margin-right: 87px;
 	margin-top: 60px;
 
 	background: url("../img/food.png") no-repeat top center;
 }
 
 .services .souvenirs {
-	float: right;
-	width: 240px;
+	width: 400px;
 	padding-top: 108px;
-	padding-right: 72px;
 	margin-top: 56px;
 
-	background: url("../img/souvenirs.png") no-repeat 35% 0;
+	background: url("../img/souvenirs.png") no-repeat top center;
 }
 
 .services h3 {
@@ -231,6 +189,9 @@ body {
 }
 
 .second-cause {
+	display: flex;
+	flex-direction: row-reverse;
+
 	text-align: center;
 	text-transform: uppercase;
 
@@ -238,13 +199,11 @@ body {
 }
 
 .second-cause img {
-	float: left;
 	width: 800px;
 	height: 256px;
 }
 
 .second-cause .cause-title {
-	float: right;
 	width: 400px;
 	padding-top: 55px;
 	padding-bottom: 43px;
@@ -253,6 +212,9 @@ body {
 }
 
 .last-causes {
+	display: flex;
+	justify-content: space-around;
+
 	margin-bottom: 54px;
 	padding-top: 50px;
 	padding-bottom: 60px;
@@ -269,7 +231,7 @@ body {
 
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 27px;
+	line-height: 1.3;
 
 	color: #000000;
 }
@@ -284,22 +246,15 @@ body {
 }
 
 .last-causes .fourth-cause {
-	float: left;
-	width: 255px;
-	padding-left: 72px;
-	margin-right: 130px;
+	width: 400px;	
 }
 
 .last-causes .fifth-cause {
-	float: left;
-	width: 343px;
-	margin-right: 70px;
+	width: 400px;	
 }
 
 .last-causes .sixth-cause {
-	float: right;
-	width: 260px;
-	padding-right: 70px;
+	width: 400px;	
 }
 
 .find-hotel {
@@ -313,7 +268,7 @@ body {
 
 	font-size: 30px;
 	font-weight: 700;
-	line-height: 38px;
+	line-height: 1.3;
 
 	color: #000000;
 }
@@ -324,17 +279,18 @@ body {
 }
 
 .btn {
+	box-sizing: border-box;
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	width: 566px;
+	width: 48%;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 26px;
+	line-height: 1.2;
 	text-transform: uppercase;
 	vertical-align: top;
 	text-align: center;
@@ -360,7 +316,6 @@ body {
 }
 
 .map {
-	
 	height: 593px;
 	width: 100%;
 
@@ -371,37 +326,35 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	z-index: 200;
 
-	box-sizing: border-box;
-	width: 1200px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
 
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer .promo-block {
-	float: left;
+	padding-left: 130px;
 	padding-top: 48px;
 	padding-bottom: 50px;
-	padding-left: 132px;
-	margin-right: 255px;
 }
 
 .promo-block span {
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 26px;
+	line-height: 1.2;
 	text-transform: uppercase;
 
 	color: #000000;
 }
 
 .main-footer .social {
-	float: left;
-	width: 150px;
+	width: 400px;
+	padding-left: 256px;
 	padding-top: 36px;
 	padding-bottom: 36px;
-	margin-right: 210px;
+	margin-right: 170px;
 
 	font-size: 0;
 }
@@ -414,7 +367,7 @@ body {
 
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 26px;
+	line-height: 1.2;
 	vertical-align: middle;
 	text-align: center;
 	text-decoration: none;
@@ -457,10 +410,10 @@ body {
 }
 
 .main-footer .copyrights {
-	float: right;
-	padding-top: 50px;
+	width: 400px;
+	padding-top: 40px;
 	padding-bottom: 40px;
-	width: 290px;
+	padding-right: 72px;
 }
 
 .copyrights span {
@@ -471,7 +424,7 @@ body {
 
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 26px;
+	line-height: 1.2;
 	text-transform: uppercase;
 	vertical-align: middle;
 }
