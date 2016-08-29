@@ -92,7 +92,8 @@ body {
 }
 
 .hotels-filter .infrastructure,
-.hotels-filter .property-type {
+.hotels-filter .property-type,
+.hotels-filter .cost-per-day {
 	display: flex;
 	width: 240px;	
 	padding: 0;
@@ -104,12 +105,17 @@ body {
 	border: none;
 }
 
+.hotels-filter .cost-per-day {
+	width: 330px;
+}
+
 .hotels-filter .property-type {
 	margin-right: 240px;
 }
 
 .infrastructure legend,
-.property-type legend {
+.property-type legend,
+.cost-per-day legend {
 	padding: 0;
 	padding-top: 25px;
 	margin: 0;
@@ -120,6 +126,120 @@ body {
 	line-height: 1.3;
 
 	border: none;
+}
+
+.cost-per-day legend {
+	margin-bottom: 10px;
+}
+
+.cost-per-day .cost {
+	position: relative;
+
+	width: 314px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-bottom: 20px;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	border-radius: 5px;
+	border: 2px solid #ffffff;
+}
+
+.cost::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	padding-bottom: 5px;
+	left: 50%;
+	
+	height: 22px;
+	width: 2px;
+
+	background-color: #ffffff;
+}
+
+.cost span {
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+.cost .cost-from {
+	margin-right: 60px;
+}
+
+.cost .cost-to {
+	margin-left: 50px;
+}
+
+.cost-range {
+	margin-bottom: 30px;
+}
+
+.cost-range .range {
+	position: relative;
+
+	width: 314px;
+	height: 2px;
+
+	background-image: linear-gradient(to right, #ffffff 86%, #908282 86%, #908282);
+}
+
+.range::after,
+.range::before {
+	content: "";
+	position: absolute;
+
+	width: 4px;
+	height: 4px;
+
+	border: 10px solid #ffffff;
+	border-radius: 50%;
+	background-color: #ababab;
+	box-shadow: 0 2px rgba(0, 1, 1, 0.14);
+}
+
+.range::after {
+	top: -10px;
+	left: 0;
+}
+
+.range::before {
+	top: -10px;
+	right: 0;
+}
+
+.range:hover::before,
+.range:hover::after {
+	background-color: #1c4f80;
+}
+
+.cost-per-day button {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 7px 35px 7px 35px;
+
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+
+	color: #ffffff;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+}
+
+.cost-per-day button:hover {
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .infrastructure label,
@@ -169,6 +289,22 @@ body {
 .infrastructure input[type="checkbox"]:checked + label,
 .property-type input[type="checkbox"]:checked + label {
 	color: #ffffff;
+}
+
+.infrastructure input[type="checkbox"]:disabled:checked + label::before,
+.property-type input[type="checkbox"]:disabled:checked + label::before {
+	content: "\2611";
+	color: #6a6a6a;
+}
+
+.infrastructure input[type="checkbox"]:disabled + label,
+.property-type input[type="checkbox"]:disabled + label {
+	color: #6a6a6a;
+}
+
+.infrastructure input[type="checkbox"]:disabled + label:hover,
+.property-type input[type="checkbox"]:disabled + label:hover {
+	color: #6a6a6a;
 }
 
 .infrastructure input[type="checkbox"] + label:hover::before,
