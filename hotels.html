@@ -16,14 +16,14 @@
 					<li><a href="#">Фото и видео</a></li>
 					<li><div class="city-logo"></div></li>
 					<li><a href="#">Карта штата</a></li>
-					<li><a href="#">Гостиницы</a></li>
+					<li><a href="#" class="active">Гостиницы</a></li>
 				</ul>
 			</nav>
 			<form class="hotels-filter" action="#" method="post">
 				<fieldset class="infrastructure">
 					<legend>Инфраструктура:</legend>
 
-					<input type="checkbox" name="pool" id="check-1">
+					<input type="checkbox" name="pool" id="check-1" checked>
 					<label for="check-1">Бассейн</label>
 					
 					<input type="checkbox" name="parking" id="check-2">
@@ -35,13 +35,13 @@
 				<fieldset class="property-type">
 					<legend>Тип жилья:</legend>
 
-					<input type="checkbox" name="hotel" id="check-4">
+					<input type="checkbox" name="hotel" id="check-4" checked>
 					<label for="check-4">Гостиница</label>
 					
-					<input type="checkbox" name="motel" id="check-5">
+					<input type="checkbox" name="motel" id="check-5" checked>
 					<label for="check-5">Мотели</label>
 					
-					<input type="checkbox" name="apartments" id="check-6">
+					<input type="checkbox" name="apartments" id="check-6" checked>
 					<label for="check-6">Апартаменты</label>
 				</fieldset>
 				<fieldset class="cost-per-day">
@@ -58,6 +58,87 @@
 			</form>
 		</header>
 		<main class="main-content">
+			<div class="sort clearfix">
+				<h3>Найдено: 3</h3>
+				<h4>Сортировка:</h4>
+				<ul class="sort-list">
+					<li><a href="#" class="active">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По рейтингу</a></li>
+				</ul>
+				<div class="sort-direction">
+					<a href="#" class="sort-up"></a>
+					<a href="#" class="sort-down active"></a>
+				</div>
+			</div>
+			<section class="hotels">
+				<article class="hotel">
+					<div class="hotel-description clearfix">
+						<div class="hotel-photo">
+							<img src="img/hotel-1.png" alt="Amara Resort & Spa" width="135" height="90">
+						</div>
+						<div class="description">
+							<a href="#">Amara Resort & Spa</a>
+							<span>Гостиница</span>
+							<span>От 3500 р.</span><br>
+							<a href="#" class="btn btn-blue">Подробнее</a>
+							<a href="#" class="btn btn-brown">Забронировать</a>
+						</div>
+					</div>
+					<div class="hotel-rating">
+						<div class="rating-stars">
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+						</div>
+						<div class="rating">Рейтинг: 8,5</div>
+					</div>
+				</article>
+				<article class="hotel">
+					<div class="hotel-description">
+						<div class="hotel-photo">
+							<img src="img/hotel-2.png" alt="Desert Quail Inn" width="135" height="90">
+						</div>
+						<div class="description">
+							<a href="#">Desert Quail Inn</a>
+							<span>Мотель</span>
+							<span>От 2000 р.</span><br>
+							<a href="#" class="btn btn-blue">Подробнее</a>
+							<a href="#" class="btn btn-brown">Забронировать</a>
+						</div>
+					</div>
+					<div class="hotel-rating">
+						<div class="rating-stars">
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+						</div>
+						<div class="rating">Рейтинг: 8,9</div>
+					</div>
+				</article>
+				<article class="hotel">
+					<div class="hotel-description">
+						<div class="hotel-photo">
+							<img src="img/hotel-3.png" alt="Villas at Poco Diablo" width="135" height="90">
+						</div>
+						<div class="description">
+							<a href="#">Villas at Poco Diablo</a>
+							<span>Апартаменты</span>
+							<span>От 4000 р.</span><br>
+							<a href="#" class="btn btn-blue">Подробнее</a>
+							<a href="#" class="btn btn-brown">Забронировать</a>
+						</div>
+					</div>
+					<div class="hotel-rating">
+						<div class="rating-stars">
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+							<span class="icon-star"></span>
+						</div>
+						<div class="rating">Рейтинг: 9,2</div>
+					</div>
+				</article>
+			</section>
 			<footer class="main-footer inner-page">
 				<section class="promo-block">
 					<span>#visitsedona</span>
